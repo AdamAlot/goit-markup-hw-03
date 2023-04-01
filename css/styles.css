@@ -17,6 +17,21 @@ body {
 .section {
   padding: 94px 0 94px;
 }
+
+/*NAVI PANEL */
+
+.navi-panel {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flex-list {
+  display: flex;
+  flex-direction: row;
+  jus
+}
+
 /*LOGO*/
 .logo-link {
   text-decoration: none;
