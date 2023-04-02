@@ -5,6 +5,7 @@
   --text-contacts-color: #757575;
   --backgroung-color: #2f303a;
   --background-button-color: #f5f4fa;
+  --border-color: #eeeeee;
 }
 
 body {
@@ -13,6 +14,7 @@ body {
 }
 .container {
   width: 1200px;
+  margin: 0 auto;
 }
 .section {
   padding: 94px 0 94px;
@@ -20,16 +22,12 @@ body {
 
 /*NAVI PANEL */
 
-.navi-panel {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+.box {
+  box-sizing: border-box;
 }
-
 .flex-list {
   display: flex;
-  flex-direction: row;
-  jus
+  justify-content: space-around;
 }
 
 /*LOGO*/
@@ -97,8 +95,10 @@ body {
   line-height: 1.39;
   letter-spacing: 0.03em;
   text-align: center;
+  border-radius: 4px;
+  border-color: var(--background-button-color);
+  border-style: hidden;
 }
-
 .button:hover {
   background-color: var(--brand-color);
   color: var(--text-second-color);
@@ -126,6 +126,8 @@ body {
   color: var(--text-second-color);
   background-color: var(--brand-color);
   cursor: pointer;
+  border-radius: 4px;
+  border-style: none;
 }
 
 /* HEADER */
@@ -202,13 +204,15 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--text-color);
+  padding: 20px 24px 4px 24px;
 }
 
 .results-descript {
   font-size: 16px;
-  line-height: 1.87x;
+  line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--text-contacts-color);
+  margin: 4px 24px 20px 24px;
 }
 /*FOOTER */
 .footer {
@@ -223,4 +227,31 @@ body {
 }
 .list {
   list-style-type: none;
+}
+
+.filter-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 8px;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.grid-item {
+  flex-basis: calc((100% - 30px) / 3);
+  background-color: var(--text-second-color);
+  border: 1px solid var(--border-color);
+}
+.section-grid {
+  padding: 34px 0 94px;
+}
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }

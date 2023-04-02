@@ -23,13 +23,18 @@
 
   <body>
     <!--NAWIGACJA-->
-    <header>
+    <header class="page-header">
       <div class="container">
-        <a class="logo-link" href="index.html"
-          >Web<span class="logo">Studio</span></a
-        >
         <nav>
-          <ul class="list">
+          <ul class="list flex-list">
+            <li>
+              <div class="box">
+                <a class="logo-link" href="index.html"
+                  >Web<span class="logo">Studio</span></a
+                >
+              </div>
+            </li>
+
             <li><a class="link" href="index.html">Agencja</a></li>
             <li><a class="link" href="portfolio.html">Portfolio</a></li>
             <li><a class="link" href="#">Kontakt</a></li>
@@ -50,10 +55,10 @@
       </div>
     </header>
 
-    <main>
+    <main class="portfolio-main">
       <!--FILTR-->
       <div class="container">
-        <ul class="list">
+        <ul class="list filter-list">
           <li>
             <button class="button" type="button">Wszystkie</button>
           </li>
@@ -72,10 +77,10 @@
         </ul>
       </div>
       <!--ZDJĘCIA-->
-      <section class="section">
+      <section class="section-grid">
         <div class="container">
-          <ul class="list">
-            <li>
+          <ul class="list grid">
+            <li class="grid-item">
               <img
                 src="./images/portfolio/all/technocrack.jpg"
                 alt="Laptop z wyświetloną storną internetową"
@@ -85,7 +90,7 @@
               <p class="results-title">Technocrack</p>
               <p class="results-descript">Strona internetowa</p>
             </li>
-            <li>
+            <li class="grid-item">
               <img
                 src="./images/portfolio/all/neworlean.jpg"
                 alt=" Dwóch koszykarzy walczących o piłkę"
@@ -95,7 +100,7 @@
               <p class="results-title">Grafika New Orlean vs Golden Star</p>
               <p class="results-descript">Dizajn</p>
             </li>
-            <li>
+            <li class="grid-item">
               <img
                 src="./images/portfolio/all/seafood.jpg"
                 alt="Logo restauraccji Seafood z rybą w tle"
@@ -105,7 +110,7 @@
               <p class="results-title">Restauracja Seafood</p>
               <p class="results-descript">Aplikacja</p>
             </li>
-            <li>
+            <li class="grid-item">
               <img
                 src="./images/portfolio/all/prime.jpg"
                 alt="Słuchawki nauszne"
@@ -115,7 +120,7 @@
               <p class="results-title">Projekt Prime</p>
               <p class="results-descript">Marketing</p>
             </li>
-            <li>
+            <li class="grid-item">
               <img
                 src="./images/portfolio/all/boxes.jpg"
                 alt="Dwa prostokątne pudełka, jedno białe - większe, drugie brązowe"
@@ -125,7 +130,7 @@
               <p class="results-title">Projekt Boxes</p>
               <p class="results-descript">Aplikacja</p>
             </li>
-            <li>
+            <li class="grid-item">
               <img
                 src="./images/portfolio/all/inspiration.jpg"
                 alt="Monitor wyświeetlający stornę internetową"
@@ -135,7 +140,7 @@
               <p class="results-title">Inspiration has no Borders</p>
               <p class="results-descript">Strona internetowa</p>
             </li>
-            <li>
+            <li class="grid-item">
               <img
                 src="./images/portfolio/all/limitededition.jpg"
                 alt="Magazyn otwarty na środkowej czceści"
@@ -145,7 +150,7 @@
               <p class="results-title">Magazyn Limited Edition</p>
               <p class="results-descript">Dizajn</p>
             </li>
-            <li>
+            <li class="grid-item">
               <img
                 src="./images/portfolio/all/lab.jpg"
                 alt="Zawieszka z napisem Lab el Tag"
@@ -155,7 +160,7 @@
               <p class="results-title">Projekt LAB</p>
               <p class="results-descript">Marketing</p>
             </li>
-            <li>
+            <li class="grid-item">
               <img
                 src="./images/portfolio/all/growing.jpg"
                 alt="Osoba piszę coś na laptopie"
