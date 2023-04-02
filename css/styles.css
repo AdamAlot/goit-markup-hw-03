@@ -21,6 +21,8 @@ body {
 .section {
   padding: 94px 0 94px;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 
 /*NAVI PANEL */
@@ -311,4 +313,12 @@ body {
 .border {
   border: 1px solid var(--border-color);
   border-top: none;
+}
+.navi-list {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 50px;
+  padding-left: 371px;
 }
