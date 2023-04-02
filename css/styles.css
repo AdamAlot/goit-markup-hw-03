@@ -13,7 +13,8 @@ body {
   color: var(--text-color);
 }
 .container {
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
 }
 .section {
@@ -245,13 +246,19 @@ body {
 .grid-item {
   flex-basis: calc((100% - 30px) / 3);
   background-color: var(--text-second-color);
-  border: 1px solid var(--border-color);
 }
 .section-grid {
   padding: 34px 0 94px;
+  align-items: center;
 }
 .page-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.result-text {
+  border: 1px solid var(--border-color);
+  border-top: none;
+  margin: 0 auto;
 }
