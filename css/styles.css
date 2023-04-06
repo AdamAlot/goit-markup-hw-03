@@ -8,15 +8,18 @@
   --border-color: #eeeeee;
   --border-navi: #ececec;
 }
-
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: "Roboto", sans-serif;
   color: var(--text-color);
 }
 .container {
-  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 .section {
   padding: 94px 0 94px;
@@ -30,9 +33,17 @@ body {
 .box {
   box-sizing: border-box;
 }
+
+.box-bottom {
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
 .flex-list {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  gap: 46px;
 }
 
 /*LOGO*/
@@ -43,6 +54,7 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  margin-right: 47px;
 }
 
 .logo {
@@ -89,6 +101,8 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--text-contacts-color);
+  margin-bottom: 53px;
+  padding-bottom: 9px;
 }
 
 /*BUTTONS */
@@ -103,6 +117,10 @@ body {
   border-radius: 4px;
   border-color: var(--background-button-color);
   border-style: hidden;
+  width: 121px;
+  height: 38px;
+  left: 961px;
+  top: 174px;
 }
 .button:hover {
   background-color: var(--brand-color);
@@ -125,24 +143,28 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.6;
-  text-align: center;
   letter-spacing: 0.06em;
   color: var(--text-second-color);
   background-color: var(--brand-color);
   cursor: pointer;
   border-radius: 4px;
+  padding: 10px 40px;
+  margin-top: 30px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
 }
 
 /* HEADER */
 .section-header {
   background-color: var(--backgroung-color);
+  padding: 200px 0;
 }
 
+.header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 0;
+}
 .main-header {
   font-weight: 900;
   font-size: 44px;
@@ -151,6 +173,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  width: 696px;
 }
 
 .secondary-header {
@@ -204,6 +227,8 @@ body {
   line-height: 1.18;
   letter-spacing: 0.03em;
   text-align: center;
+  padding-bottom: 10px;
+  padding-top: 30px;
 }
 
 .section-team-descript {
@@ -212,6 +237,7 @@ body {
   color: var(--text-contacts-color);
   letter-spacing: 0.03em;
   text-align: center;
+  padding-bottom: 30px;
 }
 
 /* RESULTS */
@@ -238,19 +264,27 @@ body {
   background-color: var(--backgroung-color);
 }
 .adress {
-  display: flex;
   color: var(--text-second-color);
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   margin: 0 auto;
+  padding-bottom: 9px;
 }
 .list {
   list-style-type: none;
 }
 
 .filter-list {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -268,41 +302,38 @@ body {
   display: block;
   /* border: 1px solid var(--border-color);*/
   border-top: none;
-  margin: 0px;
-  padding: 0px;
+  /*margin-bottom: 30px;*/
+  padding-bottom: 15px;
 }
 .section-grid {
   padding: 34px 0 94px;
   align-items: center;
 }
 .page-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   border-bottom: 1px solid var(--border-navi);
 }
 .column {
   display: flex;
-  flex-wrap: wrap;
-  row-gap: 30px;
+  flex-wrap: nowrap;
+  column-gap: 30px;
+  margin: 0;
 }
 .column-item {
   flex-basis: calc((100% - 30px) / 4);
-  display: block;
+  /*display: block;*/
   margin: 0 auto;
-  padding: 0;
 }
 
 .column-photo {
   display: flex;
-  flex-wrap: wrap;
-  row-gap: 30px;
+  flex-wrap: nowrap;
+  column-gap: 30px;
 }
 .column-photo-item {
   flex-basis: calc((100% - 30px) / 3);
   display: block;
   margin: 0 auto;
-  padding: 0;
+  /*padding-right: 15px;*/
 }
 
 .master-disaster {
@@ -313,6 +344,7 @@ body {
 .border {
   border: 1px solid var(--border-color);
   border-top: none;
+  border-radius: 0px 0px 4px 4px;
 }
 .navi-list {
   display: flex;
@@ -320,5 +352,20 @@ body {
   flex-direction: row;
   align-items: flex-end;
   gap: 50px;
-  padding-left: 371px;
+}
+
+.banner {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.filtr {
+  margin-top: 94px;
+}
+
+.footer-column {
+  display: flex;
+  flex-flow: column;
+  padding: 60px 0;
 }
