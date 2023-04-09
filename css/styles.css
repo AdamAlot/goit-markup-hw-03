@@ -16,6 +16,9 @@ body {
   font-family: "Roboto", sans-serif;
   color: var(--text-color);
 }
+.img {
+  display: block;
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -27,7 +30,9 @@ body {
   display: flex;
   justify-content: center;
 }
-
+.s {
+  padding-top: 0px;
+}
 /*NAVI PANEL */
 
 .box {
@@ -117,15 +122,13 @@ body {
   border-radius: 4px;
   border-color: var(--background-button-color);
   border-style: hidden;
-  width: 121px;
-  height: 38px;
-  left: 961px;
-  top: 174px;
+  
 }
 .button:hover {
   background-color: var(--brand-color);
   color: var(--text-second-color);
   cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .button:active {
@@ -249,7 +252,6 @@ body {
   letter-spacing: 0.06em;
   color: var(--text-color);
   margin: 0;
-  padding: 20px 24px 4px 24px;
 }
 
 .results-descript {
@@ -257,7 +259,7 @@ body {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--text-contacts-color);
-  margin: 4px 24px 20px 24px;
+  margin: 0;
 }
 /*FOOTER */
 .footer {
@@ -294,11 +296,11 @@ body {
 .grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 30px;
 }
 
 .grid-item {
-  flex-basis: calc((100% - 30px) / 3);
+  /*flex-basis: calc((100% - 30px) / 3);*/
   display: block;
   /* border: 1px solid var(--border-color);*/
   border-top: none;
@@ -306,8 +308,9 @@ body {
   padding-bottom: 15px;
 }
 .section-grid {
-  padding: 34px 0 94px;
-  align-items: center;
+ 
+ padding-top: 50px;
+    align-items: center;
 }
 .page-header {
   border-bottom: 1px solid var(--border-navi);
@@ -345,6 +348,7 @@ body {
   border: 1px solid var(--border-color);
   border-top: none;
   border-radius: 0px 0px 4px 4px;
+  border padding: 20px 24px;
 }
 .navi-list {
   display: flex;
