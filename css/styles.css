@@ -16,7 +16,7 @@ body {
   font-family: "Roboto", sans-serif;
   color: var(--text-color);
 }
-.img {
+img {
   display: block;
 }
 .container {
@@ -301,12 +301,8 @@ body {
 }
 
 .grid-item {
-  /*flex-basis: calc((100% - 30px) / 3);*/
   display: block;
-  /* border: 1px solid var(--border-color);*/
   border-top: none;
-  /*margin-bottom: 30px;*/
-  padding-bottom: 15px;
 }
 .section-grid {
   padding-top: 50px;
@@ -324,7 +320,6 @@ body {
 }
 .column-item {
   flex-basis: calc((100% - 30px) / 4);
-  /*display: block;*/
   margin: 0 auto;
 }
 
@@ -337,7 +332,6 @@ body {
   flex-basis: calc((100% - 30px) / 3);
   display: block;
   margin: 0 auto;
-  /*padding-right: 15px;*/
 }
 
 .master-disaster {
@@ -372,5 +366,6 @@ body {
 .footer-column {
   display: flex;
   flex-flow: column;
+  flex-wrap: nowrap;
   padding: 60px 0;
 }
